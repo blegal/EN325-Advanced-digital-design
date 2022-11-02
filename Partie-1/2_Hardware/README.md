@@ -206,7 +206,7 @@ Toutes les étapes de vérification que nous avons déployées jusqu'à maintena
 
 Afin de vous simplifier la vie, votre enseignant met à votre disposition les outils nécessaires à la communication avec la carte Nexys-4.
 
-- [X] Ajoutez les fichiers VHDL présents dans le repertoire Etape_6 à votre projet Vivado.
+- [X] Ajoutez les fichiers VHDL présents dans le repertoire Etape_7 à votre projet Vivado.
 - [X] Ajoutez le fichier de contraintes dédié à la carte Nexys-4.
 - [X] Lancez la génération du bitstream.
 - [X] Une fois toutes ces étapes réalisées, configurer le FPGA à l'aide du bitstream.
