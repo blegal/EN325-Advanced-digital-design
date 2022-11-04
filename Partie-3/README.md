@@ -17,7 +17,7 @@ La première série d’expériences va cibler l’évaluation des caractéristi
 Pour des raisons de simplicité, nous omettrons dans cette étude la propagation de la retenue. L’opérateur d’addition que vous devez implanter consomme deux données sur *N* bits et produit une donnée sur *N* bits.
 
 A partir de ces informations :
-- Créez un projet Vivado ciblant une carte d'évaluation Nexys-4.
+- Créez un nouveau projet Vivado ciblant une carte d'évaluation Nexys-4 ou ouvrez celui déjà présent.
 - Récupérer la description VHDL de l'opérateur d'addition disponible sur le site internet de votre enseignant et intégrer la dans votre projet.
 - Réalisez la synthèse logique du module et notez la complexité matérielle de l’opérateur (nombre de LUTs) ainsi que la durée du chemin critique.
 - Faites varier la largeur des données d’entrée avec les valeurs suivantes [8, 16, 24, 32, 64] afin d'avoir une idée plus précise de l'évolution de la complexité matérielle.
@@ -25,6 +25,10 @@ A partir de ces informations :
 **Attention**
 
 Afin de ne pas fausser les mesures de performance, vous devez ajouter l'option "-mode out_of_context" dans les options de synthèse de Vivado (Synthesis => More options). Dans le cas contraire les résultats post-implantation rapportant le timing seront faussés.
+
+Vous devrez aussi créer un fichier de contraintes .xdc dans lequel vous placerez la ligne suivante:
+
+create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {CLOCK}];
 
 **Remarque**
 
