@@ -81,11 +81,15 @@ A vous de jouer :
 - Modifiez les fichiers afin d'incorporer ce raffinement des interfaces.
 - Compilez le modèle modifié puis lancez la simulation.
 - Vérifiez que l'image générée est conforme à l’original.
+  
 Normalement, vous avez du découvrir que la simulation ne fourni plus les résultats attendus. Pour ceux qui ne l'auraient pas vu, deux solutions, votre modèle est faux (vous n'avez pas bien appliqué les modifications demandées) soit vous n'avez pas validé correctement l'image de sortie.
+
 A vous de rejouer :
-•	Corrigez vos codes afin de résoudre le problème observé.
-•	Compilez le modèle corrigé puis lancez la simulation.
-•	Vérifiez que l'image générée est maintenant conforme.
+
+-	Corrigez vos codes afin de résoudre le problème observé.
+-	Compilez le modèle corrigé puis lancez la simulation.
+-	Vérifiez que l'image générée est maintenant conforme.
+
 Comme vous venez de le remarquer une modification insignifiante peut relever des problèmes réels. Imaginez la difficulté pour identifier et corriger ce genre de problème lorsque l'on se trouve en VHDL et que l'on manipule des vecteurs de bits.
 
 ##	Conclusion
