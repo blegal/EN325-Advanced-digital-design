@@ -17,9 +17,9 @@ ap_ufixed<wl, iwl, q_mode, o_mode> var_unsigned;
 // EXAMPLE D'UTILISATION
 float adder(float a, float b)
 {
-	ap_fixed<4,2,SC_RND,SC_SAT> Inputa = a;
-	ap_fixed<6,3,SC_RND,SC_SAT> Inputb = b;
-	ap_fixed<7,4,SC_RND,SC_SAT> Output;
+	ap_fixed<4, 2, AP_RND, AP_SAT> Inputa = a;
+	ap_fixed<6, 3, AP_RND, AP_SAT> Inputb = b;
+	ap_fixed<7, 4, AP_RND, AP_SAT> Output;
 	Output = (Inputa + Inputb);
 	return Output;
 }
